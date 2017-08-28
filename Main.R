@@ -51,7 +51,6 @@ age.row <- titanic.consolidated[
 age.prediction <- predict(age.model, newdata = age.row)
 titanic.consolidated[is.na(titanic.consolidated$Age), "Age"] <- age.prediction 
 
-
 #Just use the median for fare.
 #fare.median <- median(titanic.consolidated$Fare, na.rm = TRUE)
 #titanic.consolidated[is.na(titanic.consolidated$Fare), "Fare"] <- fare.median
